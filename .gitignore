@@ -5,3 +5,5 @@ db.sqlite3
 .env
 *.tmp
 .vscode/
+reporters.json
+issues.jsonnotes.ipynb 

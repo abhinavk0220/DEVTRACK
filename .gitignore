@@ -6,4 +6,5 @@ db.sqlite3
 *.tmp
 .vscode/
 reporters.json
-issues.jsonnotes.ipynb 
+issues.json
+notes.ipynb 

@@ -146,7 +146,7 @@ Not found, `404`:
 
 Why: if clients chose IDs, two clients could send the same one, a client could overwrite another record by guessing an ID, and no client can know the current maximum while others are writing. The brief's sample request includes `"id": 1`, so this is a deliberate deviation. For the first record the result is identical. After that, a client-sent ID is replaced by the server's, and the response always shows the real ID. The `screenshots/` folder demonstrates this with requests that send a different ID than the one returned.
 
-![Client sent id 1, server returned id 3](screenshots/issues/POST_Issues_System_Generated_IDs-3.png)
+![Client sent id 1, server returned id 3](screenshots/issues/post_issues_system_generated_ids-3.png)
 
 
 Other decisions:
@@ -166,36 +166,36 @@ Success and failure cases for every endpoint are in [`screenshots/`](screenshots
 
 Success, `POST /api/issues/` returns `201`:
 
-![POST issue, 201](screenshots/issues/POST_Issues.png)
+![POST issue, 201](screenshots/issues/post_issues.png)
 
 Failure, `POST /api/issues/` returns `400`:
 
-![POST issue, 400](screenshots/issues/POST_Invalid_Title_Empty.png)
+![POST issue, 400](screenshots/issues/post_invalid_title_empty.png)
 
 
 Success, `GET /api/issues/` returns `200`:
 
-![GET issue, 200](screenshots/issues/GET_Issues.png)
+![GET issue, 200](screenshots/issues/get_issues.png)
 
 Failure, `GET /api/issues/` returns `400`:
 
-![GET issue, 400](screenshots/issues/GET_Status_Invalid_Status.png)
+![GET issue, 400](screenshots/issues/get_status_invalid_status.png)
 
 Success, `POST /api/reporters/` returns `201`:
 
-![POST reporter, 201](screenshots/reporters/POST_Reporters.png)
+![POST reporter, 201](screenshots/reporters/post_reporters.png)
 
 Failure, `POST /api/reporters/` returns `400`:
 
-![POST reporter, 400](screenshots/reporters/POST_Reporters_Invalid_Email.png)
+![POST reporter, 400](screenshots/reporters/post_reporters_invalid_email.png)
 
 Success, `GET /api/reporters/` returns `200`:
 
-![GET reporter, 200](screenshots/reporters/GET_Reporters.png)
+![GET reporter, 200](screenshots/reporters/get_reporters.png)
 
 Failure, `GET /api/reporters/` returns `404`:
 
-![GET reporter, 404](screenshots/reporters/GET_Reporters_Invalid_ID.png)
+![GET reporter, 404](screenshots/reporters/get_reporters_invalid_id.png)
 
 ## Known limitations
 
